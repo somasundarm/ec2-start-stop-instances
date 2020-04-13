@@ -1,3 +1,2 @@
-sh 'sudo apt-get install python3'
 sh 'sudo yum install python3'
 sh 'python3 --version'
