@@ -1,2 +1,19 @@
-sh 'sudo yum install python3'
-sh 'python3 --version'
+pipeline {
+    agent any
+    stages {
+stage('Build') {
+            steps {
+               ([[
+ echo "HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+                ]]) {
+                    echo "Listing contents of an S3 bucket."
+                   }
+            }
+        }
+        stage('Minting Python') {
+            steps {
+                sh 'sudo yum install python3'
+                  }
+               }            
+           }
+ }
