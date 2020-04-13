@@ -3,9 +3,8 @@ pipeline {
     stages {
 stage('Build') {
             steps {
-               ([[
- echo "HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
-                ]]) {
+                    echo "HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+                  }
                     echo "Listing contents of an S3 bucket."
                    }
             }
