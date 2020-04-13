@@ -123,11 +123,11 @@ def main():
 	
 	
 	if (len(result) == len(instances_id)):
-		print("Success: %s : %s" % (action, str(result)) )
+		print(("Success: %s : %s" % (action, str(result)) ))
 		if alert: send_aws_mail(action, str(result))
 	else:
 		if alert: sendmail(mail_sender, mail_receivers, "Error %s instances %s" % (action, str(instances_id)), "Some operation failed, check the instance list: %s" % (str(result)))
-		print("Error %s instances %s" % (action, str(instances_id)))
+		print(("Error %s instances %s" % (action, str(instances_id))))
 	return
 
 
