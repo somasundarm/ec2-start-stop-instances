@@ -4,6 +4,7 @@ pipeline {
         stage('Minting Python') {
             steps {
                 sh 'python3 --version'
+                sh 
                   }
                }            
               }
