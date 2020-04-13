@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Minting Python') {
             steps {
-                sh 'sudo yum install python3'
+                sh 'python3 -version'
                   }
                }            
               }
